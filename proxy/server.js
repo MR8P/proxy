@@ -4,7 +4,7 @@ var app = express();
 var fs = require('fs');
 
 app.get('/proxy.pac', function (req, res) {
-  fs.readFile('./proxy.pac', function (err, pacfile) {
+  fs.readFile('proxy/proxy.pac', function (err, pacfile) {
 		if (err) {
 			console.log(err);
 		}
@@ -16,5 +16,5 @@ app.get('/proxy.pac', function (req, res) {
 })
 
 app.listen(8080, function () {
-  console.log('Listening on port 3000!')
+  console.log('Listening on port 8080!')
 })
