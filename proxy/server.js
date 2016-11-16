@@ -11,7 +11,6 @@ app.get('/proxy.pac', function (req, res) {
 		res.writeHeader(200, {"Content-Type" : "application/x-ns-proxy-autoconfig"});
 		res.write(pacfile);
 		res.end();
-		console.log("PAC file sent...");
 	});
 })
 
