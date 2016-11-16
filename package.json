@@ -1,0 +1,27 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "Proxy To China",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "QQ"
+  ],
+  "author": "Mike",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MR8P/proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MR8P/proxy/issues"
+  },
+  "homepage": "https://github.com/MR8P/proxy#readme"
+}
