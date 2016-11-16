@@ -11,5 +11,17 @@
     "QQ"
   ],
   "author": "Mike",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MR8P/proxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MR8P/proxy/issues"
+  },
+  "homepage": "https://github.com/MR8P/proxy#readme"
 }
