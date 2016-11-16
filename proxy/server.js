@@ -15,6 +15,6 @@ app.get('/proxy.pac', function (req, res) {
 	});
 })
 
-app.listen(3000, function () {
+app.listen(8080, function () {
   console.log('Listening on port 3000!')
 })
