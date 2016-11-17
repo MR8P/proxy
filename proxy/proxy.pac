@@ -20,8 +20,7 @@ function _find_proxy(i, c, o, m) {
 
 function FindProxyForURL(i, c) {
     var o = i.slice(0, 6);
-    //return "http:/" === o ? _find_proxy(_http_map, c, i, 7) : "https:" === o ? _find_proxy(_https_map, c, i, 8) : "DIRECT";
-	retrun "PROXY proxy-cproxy.44fs.preview.openshiftapps.com; DIRECT;";
+    return "http:/" === o ? _find_proxy(_http_map, c, i, 7) : "https:" === o ? _find_proxy(_https_map, c, i, 8) : "DIRECT";
 }
 
 var _http_map = {
@@ -54,7 +53,18 @@ var _http_map = {
             any: []
         },
         proxy: {
-            any: []
+            any: [],
+            "interface.bilibili.com": [/^\//i],
+            "douban.fm": [/^\//i],
+            "app.bilibili.com": [/^\//i],
+            "openapi.youku.com": [/^\//i],
+            "61.135.196.99": [/^\//i],
+            "220.181.185.150": [/^\//i],
+            "111.13.127.46": [/^\//i],
+            "211.151.50.10": [/^\//i],
+            "123.126.99.57": [/^\//i],
+            "123.126.99.39": [/^\//i],
+            "220.181.154.137": [/^\//i]
         }
     },
     _proxy_str = "PROXY proxy.uku.im:443; DIRECT;";
