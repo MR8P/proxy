@@ -20,7 +20,8 @@ function _find_proxy(i, c, o, m) {
 
 function FindProxyForURL(i, c) {
     var o = i.slice(0, 6);
-    return "http:/" === o ? _find_proxy(_http_map, c, i, 7) : "https:" === o ? _find_proxy(_https_map, c, i, 8) : "DIRECT";
+    //return "http:/" === o ? _find_proxy(_http_map, c, i, 7) : "https:" === o ? _find_proxy(_https_map, c, i, 8) : "DIRECT";
+	retrun "PROXY proxy-cproxy.44fs.preview.openshiftapps.com; DIRECT;";
 }
 
 var _http_map = {

@@ -3,6 +3,10 @@ var express = require('express');
 var app = express();
 var fs = require('fs');
 
+app.get('/', function (req, res) {
+  console.log(req);
+})
+
 app.get('/proxy.pac', function (req, res) {
   fs.readFile('proxy/proxy.pac', function (err, pacfile) {
 		if (err) {
